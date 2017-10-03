@@ -12,21 +12,21 @@ router.get("/", function(req, res){
 //Handle Post DATA
 router.post("/", function(req, res){
     
-    // //Honeypot for Spambots
-    // if(req.body.company) {
-    //     res.render('index', {
-    //         title: 'Contact',
-    //         err: true,
-    //         page: 'contact',
-    //         type: 'empty',
-    //         body: req.body.message,
-    //         name: req.body.name,
-    //         email: req.body.name,
-    //         msg: 'spambot detected.',
-    //         description: 'spam'
-    //     });
-    // return;
-    // }
+    //Honeypot for Spambots
+    if(req.body.company) {
+        res.render('index', {
+            title: 'Contact',
+            err: true,
+            page: 'contact',
+            type: 'empty',
+            body: req.body.message,
+            name: req.body.name,
+            email: req.body.name,
+            msg: 'spambot detected.',
+            description: 'spam'
+        });
+    return;
+    }
     
     //check if all required fields are filled
     if(! req.body.name || ! req.body.email || ! req.body.message) {
