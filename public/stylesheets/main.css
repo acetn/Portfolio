@@ -43,7 +43,7 @@ a {
 }
 .o-container {
 	margin: 0 auto;
-	width: 70%;
+		width: calc(100% - 24px);
 }
 .c-style-container {
 	background: transparent;
@@ -242,11 +242,8 @@ a {
 	margin-right: 5px;
 	float: left;
 }
-@media (max-width: 764px) {
+@media (min-width: 768px) {
 	.o-container{
-		width: calc(100% - 24px);
-	}
-	.c-form {
-		width: 90%;
+		width: 70%;
 	}
 }
