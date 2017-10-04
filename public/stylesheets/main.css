@@ -26,6 +26,12 @@ a {
 	display: block;
 	text-decoration: none;
 }
+.u-fixed {
+	position: fixed;
+	z-index: 4;
+	left: 50%;
+	transform: translate(-50%);
+}
 .c-icon {
    color: #555;
    display: inline-block;
@@ -38,6 +44,8 @@ a {
 .o-container {
 	margin: 0 auto;
 	width: 70%;
+}
+.c-style-container {
 	background: transparent;
 	background: rgba(0,0,0,0.4);
 	padding: 10px;
@@ -70,6 +78,24 @@ a {
 		transform: translateY(-50%);
 		position: relative;
 }
+.c-alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+}
+.c-alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.c-alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
 
 
 /*WELCOME SECTION*/

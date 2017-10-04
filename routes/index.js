@@ -87,8 +87,9 @@ router.post("/", function(req, res){
        
        //email not sent
        if (error) {
-           console.log(error);
-           res.render("index", {
+            req.flash("error", "Oh no! Something went wrong.");
+            console.log(error);
+            res.render("index", {
                title: 'contact',
                page: 'contact',
                type: 'error',
@@ -97,6 +98,7 @@ router.post("/", function(req, res){
        }
        // Email sent
        else {
+           req.flash("success", "Thanks for the interest, I will reply shortly!");
            res.render("index", {
                title: 'Contact',
                page: 'contact',

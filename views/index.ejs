@@ -8,6 +8,18 @@
 		<link rel="stylesheet" href="/stylesheets/main.css">
 	</head>
 	<body>
+		<div class="o-container u-fixed js-flash">
+	        <% if(error && error.length > 0){ %>
+	            <div class="c-alert c-alert-danger" role="alert">
+	                <%= error %>
+	            </div>
+	        <% } %>
+	        <% if(success && success.length > 0){ %>
+	            <div class="c-alert c-alert-success" role="alert">
+	                <%= success %>
+	            </div>
+	        <% } %>
+	    </div>
 		<div class="c-background-main">
 			<h1 class="c-background-text">Ace</h1>
 		</div>
@@ -21,7 +33,7 @@
 				</div>
 			</section>
 			<section id="about" class="c-about o-section">
-				<div class="c-about-container o-container">
+				<div class="c-about-container o-container c-style-container">
 					<h1>Freelance | Creative | Web Development</h1>
 					<p>
 						Hi there! My name is Andrew Nguyen.
@@ -41,7 +53,7 @@
 
 			</section>
 			<section class="c-hire o-section c-butt">
-				<div class="o-container">
+				<div class="o-container c-style-container">
 					<h1>CONTACT ME</h1>
 					<p>ace@acetnguyen.com</p>
 					<form class="c-form" action="/" method="POST">
