@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Web Design 1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="/stylesheets/design1.css">
+    </head>
+    <body>
+        <div class="o-wrap">
+            <div class="CONCEPT">
+                <h3>THIS IS JUST A MOCK-UP</h3>
+            </div>
+            <section id="welcome" class="c-welcome o-section">
+                <div class="c-welcome__backdrop-wrap">
+                    <ul class="c-welcome__slideshow">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="c-welcome__nav-wrap">
+                    <div class="c-nav-logo"></div>
+                    <div class="c-nav-options">
+                        <ul>
+                            <li><a href="#">Merchandise</a></li>                                
+                            <li><a href="#">Storybook</a></li>
+                            <li><a href="#">Packages</a></li>                            
+                            <li><a href="#">Booking</a></li>
+                        </ul>
+                    </div>
+                    <div class="c-nav-contact js-slideout">
+                        <span><a><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>      <i class="fa fa-long-arrow-right fa-lg" aria-hidden="true"></i></a></span>
+                    </div>
+                </div>
+                <div class="c-contact-form">
+                    <form class="c-form" action="#" method="POST">
+                        <div class="c-form-group">
+                            <input class="c-form-control" type="text" placeholder="name" name="name" required/>
+                        </div>
+                        <div class="c-form-group">
+                            <input class="c-form-control c-form-right" type="email" placeholder="email" name="email" required/>
+                        </div>
+                        <div class="company">
+                            <input type="text" placeholder="Your company name" name="company" />
+                        </div>
+                        <div class="c-form-group">
+                            <textarea name="message" placeholder="Give us a message"cols="40" rows="10" class="c-form-control c-form-text" aria-invalid="false"></textarea>
+                        </div>
+                        <div class="c-form-group">
+                            <button class="c-form-btn">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="c-welcome__scroll js-scroller">
+                    <svg height="75" width="50">                        
+                        <polyline points="25,20 25,55" stroke="#FFF" stroke-width="2" fill="none"/>                        
+                        <polyline points="10,40 25,55 40,40" stroke="#FFF" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+            </section>
+            <section id="about" class="c-about o-section">
+                <div class="c-about__title">
+                </div>
+                <div class="c-kristina-bio">
+                    <div class="c-kristina-picture"></div>   
+                    <div class="c-kristina-bio__text">
+                        <h3>Kristina Doan</h3>
+                        <!-- <p>"Let me be your support and guidance for an event you can truly enjoy and remember for a lifetime!"</p> -->
+                    </div>                     
+                </div>
+                <div class="c-jessica-bio">
+                    <div class="c-jessica-picture"></div>
+                    <div class="c-jessica-bio__text">
+                        <h3>Jessica Tran</h3>
+                        <!-- <p>"My goal is get you through planning without feeling any pressure."</p> -->
+                    </div> 
+                </div>
+            </section>
+            <section id="story" class="c-story o-section">
+                <div class="c-story__gallery">
+                    <div class="c-gallery__slides c-fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="https://static.pexels.com/photos/236275/pexels-photo-236275.jpeg" style="width:100%">
+                        <div class="c-gallery__cap">Caption Text</div>
+                    </div>
+                    
+                    <div class="c-gallery__slides c-fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="https://static.pexels.com/photos/566454/pexels-photo-566454.jpeg" style="width:100%">
+                        <div class="c-gallery__cap">Caption Two</div>
+                    </div>
+                    
+                    <div class="c-gallery__slides c-fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="https://static.pexels.com/photos/302028/pexels-photo-302028.jpeg" style="width:100%">
+                        <div class="c-gallery__cap">Caption Three</div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </section>
+            <section id="credits" class="c-credits">
+                <p>Designed and developed by <a class="name" href="www.acetnguyen.com">Andrew Nguyen</a></p>
+                <p>All logos and images belong to their respective owners</p>
+            </section>
+        </div>
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+		<script type="text/javascript" src="/js/design1.js"></script>        
+    </body>
+</html>

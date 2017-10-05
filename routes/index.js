@@ -8,6 +8,9 @@ var express = require("express"),
 router.get("/", function(req, res){
     res.render("index");
 });
+router.get("/design1", function(req, res){
+    res.render("./design1/design1");
+});
 
 //Handle Post DATA
 router.post("/", function(req, res){
