@@ -1,3 +1,17 @@
+.CONCEPT {
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    border-radius: 20px;
+    pointer-events: none;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-50%);
+    top: 50%;
+}
+.CONCEPT h3 {
+    color: white;
+}
+
 /* GENERAL */
 body {
     margin: 0;
@@ -35,17 +49,7 @@ p {
     font-weight: 600;
     color: #555;
 }
-.CONCEPT {
-    position: fixed;
-    background: rgba(0,0,0,.5);
-    top: 10px;
-    left:50%;
-    transform: translate(-50%);
-    border-radius: 20px;
-}
-.CONCEPT h3 {
-    color: white;
-}
+
 /*WELCOME SECTION*/
 
 .c-welcome__backdrop-wrap {
@@ -103,6 +107,26 @@ p {
       opacity: 0
     }
   }
+.c-welcome__mobile-nav-wrap {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: rgb(216, 220, 241);
+    display: none;
+}
+.c-nav-background {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background: #FAFAFA;
+    padding: 7px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.c-nav-background .c-nav-logo {
+    transform: translate(10px);
+}
 .c-welcome__nav-wrap {
     width: 20%;
     height: 100vh;
@@ -117,7 +141,7 @@ p {
 }
 .c-nav-logo {
     height: 100px;
-    width: 90%;
+    width: 200px;
     margin-left: 10px;
     background: url(sparkLogo.png) left center no-repeat;
     background-size: contain;
@@ -157,15 +181,16 @@ p {
     stroke: #AAA;
 }
 .c-contact-form {
-    width: 0;
+    left: -40vw;
+    width: 40vw;
     position: absolute;
     height: 100%;
-    transition: width 2s;
+    transition: transform 2s;
     background: #FFF;
 }
 .js-contact-form-active {
-    width: 40vw;
-    transition: width 2s;
+    transform: translate(40vw);
+    transition: transform 2s;
 }
 .c-form {
 	width: 80%;
@@ -179,13 +204,14 @@ p {
 	display: none;
 }
 .c-form-control {
+    font-family: 'Raleway', sans-serif;
 	float: left;
 	margin-right: 5%;
 	margin-bottom: 15px;
 	box-sizing: border-box;
 	color: #444444;
 	background: transparent;
-	background: rgba(0,0,0,0.4);
+	background: rgba(166, 83, 173, 0.4);
 	display: block;
 	width: 47.5%;
 	height: 34px;
@@ -294,6 +320,8 @@ p {
 /* STORY SECTION */
 .c-story {
     border-top: 1px solid #AAA;
+    height: 100%;
+    position: relative;
 }
 .c-gallery__slides {
     display: none;
@@ -341,7 +369,7 @@ p {
     top: 0;
   }
   /* Fading animation */
-  .fade {
+  .c-fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
@@ -369,4 +397,17 @@ p {
 }
 .name {
     text-decoration: underline;
+}
+
+@media (max-width: 1040px){
+    .c-welcome__nav-wrap {
+        display: none;
+    }
+    .c-welcome__scroll {
+        left: 50%;
+    }
+    .c-welcome__mobile-nav-wrap {
+        display: flex;
+    }
+    
 }
