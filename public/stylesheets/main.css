@@ -25,6 +25,7 @@ p {
 a {
 	display: block;
 	text-decoration: none;
+	color: rgb(211, 211, 211);
 }
 .u-fixed {
 	position: fixed;
